@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { useGame } from '../context/GameContext';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
+import { CharacterPortrait } from './CharacterPortrait';
 
 const CharacterPanel = () => {
   const { characters } = useGame();
@@ -18,10 +18,9 @@ const CharacterPanel = () => {
             </CardHeader>
             <CardContent className="p-4 pt-0 space-y-2">
               <div className="w-full aspect-square bg-secondary rounded-md overflow-hidden mb-2">
-                <img 
-                  src={character.image} 
-                  alt={character.name} 
-                  className="w-full h-full object-cover character-portrait" 
+                <CharacterPortrait 
+                  character={character.id as any} 
+                  size="lg" 
                 />
               </div>
               <div className="text-sm text-muted-foreground">{character.role}</div>
