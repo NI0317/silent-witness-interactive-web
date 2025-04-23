@@ -133,8 +133,8 @@ const initialCharacters: Character[] = [
     id: 'chen',
     name: '陈副教授',
     role: '嫌疑人',
-    image: '/lovable-uploads/8044e0e1-a689-4d5f-a57c-7bf105581a25.png',
-    background: '学术竞争对手，现为梁教授前妻的丈夫。',
+    image: '/characters/chen.png',
+    background: '学术竞争对手，现为梁教授前妻的丈夫。他主张文学应服务于公共伦理，与梁教授在学术理念上存在深刻分歧。',
     interviewed: false,
     suspicious: 20
   },
@@ -142,8 +142,8 @@ const initialCharacters: Character[] = [
     id: 'liu',
     name: '刘同学',
     role: '嫌疑人',
-    image: '/lovable-uploads/34a83473-0bfd-4370-b75f-a9d1baafaf40.png',
-    background: '与梁教授关系复杂的博士生。',
+    image: '/characters/liu.png',
+    background: '梁教授的博士生，研究民国文学。与梁教授曾有不当关系，后被写入新书中，对其学术前途造成严重威胁。',
     interviewed: false,
     suspicious: 30
   },
@@ -151,8 +151,8 @@ const initialCharacters: Character[] = [
     id: 'lin',
     name: '林女士',
     role: '嫌疑人',
-    image: '/lovable-uploads/a667562b-c212-4f68-bbef-cd537218e4fa.png',
-    background: '梁教授的前妻，古医药专家。',
+    image: '/characters/lin.png',
+    background: '梁教授的前妻，古医药专家。精通古代医学，尤其是毒理学研究。为梁教授配制中药，但两人关系早已破裂。',
     interviewed: false,
     suspicious: 20
   },
@@ -160,8 +160,8 @@ const initialCharacters: Character[] = [
     id: 'wu',
     name: '吴医生',
     role: '嫌疑人',
-    image: '/lovable-uploads/5f02a727-89d2-4c0a-8dd8-e8b8b3653787.png',
-    background: '大学好友兼医生，对林女士怀有特殊感情。',
+    image: '/characters/wu.png',
+    background: '梁教授的大学同学兼医生，对林女士怀有特殊感情。在新书中被影射为一个操纵病人的伪君子形象。',
     interviewed: false,
     suspicious: 15
   },
@@ -169,8 +169,8 @@ const initialCharacters: Character[] = [
     id: 'zhao',
     name: '赵编辑',
     role: '嫌疑人',
-    image: '/lovable-uploads/f0c639af-4d78-4fc7-994f-4bc42e732258.png',
-    background: '因梁教授违约而遭受经济损失的出版人。',
+    image: '/characters/zhao.png',
+    background: '出版人，因梁教授突然违约转投其他出版社而蒙受重大经济损失。对梁教授的背信弃义心怀不满。',
     interviewed: false,
     suspicious: 10
   },
@@ -178,8 +178,8 @@ const initialCharacters: Character[] = [
     id: 'meiMei',
     name: '梁小姐',
     role: '嫌疑人',
-    image: '/lovable-uploads/cac76f75-a324-4515-933f-4ea022d89d4b.png',
-    background: '与梁教授有财产纠纷的妹妹。',
+    image: '/characters/meiMei.png',
+    background: '梁教授的妹妹，与其在家族古籍处理和产业分配上长期存在争执。对哥哥的专横和独断心存芥蒂。',
     interviewed: false,
     suspicious: 15
   }

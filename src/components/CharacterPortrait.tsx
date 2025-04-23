@@ -17,7 +17,7 @@ const characterImages = {
 const sizes = {
   sm: 'w-12 h-12',
   md: 'w-24 h-24',
-  lg: 'w-32 h-32',
+  lg: 'w-full h-auto',
 };
 
 export const CharacterPortrait: React.FC<CharacterPortraitProps> = ({ 
@@ -25,11 +25,11 @@ export const CharacterPortrait: React.FC<CharacterPortraitProps> = ({
   size = 'md' 
 }) => {
   return (
-    <div className={`relative ${sizes[size]} overflow-hidden rounded-full`}>
+    <div className={`relative ${sizes[size]} overflow-hidden rounded-lg bg-secondary`}>
       <img
         src={characterImages[character]}
         alt={`${character} portrait`}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-contain"
       />
     </div>
   );
