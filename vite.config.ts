@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   
   return {
-    base: '/',
+    base: '/silent-witness-interactive-web/',
     server: {
       host: "localhost",
       port: 8080,
