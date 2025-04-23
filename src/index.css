@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 33% 98%;
+    --foreground: 220 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 10%;
+
+    --primary: 260 40% 45%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 20% 92%;
+    --secondary-foreground: 220 10% 10%;
+
+    --muted: 220 20% 92%;
+    --muted-foreground: 220 10% 40%;  
+
+    --accent: 260 40% 45%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 86%;
+    --input: 220 20% 86%;
+    --ring: 260 40% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 33% 98%;
+    --sidebar-foreground: 220 10% 10%;
+    --sidebar-primary: 260 40% 45%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 220 20% 92%;
+    --sidebar-accent-foreground: 220 10% 10%;
+    --sidebar-border: 220 20% 86%;
+    --sidebar-ring: 260 40% 45%;
+  }
+
+  .dark {
+    --background: 220 40% 10%;
+    --foreground: 220 20% 90%;
+
+    --card: 220 35% 13%;
+    --card-foreground: 220 20% 90%;
+
+    --popover: 220 35% 13%;
+    --popover-foreground: 220 20% 90%;
+
+    --primary: 260 40% 65%;
+    --primary-foreground: 220 40% 10%;
+
+    --secondary: 220 30% 20%;
+    --secondary-foreground: 220 20% 90%;
+
+    --muted: 220 30% 20%;
+    --muted-foreground: 220 20% 70%;
+
+    --accent: 260 40% 65%;
+    --accent-foreground: 220 40% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 30% 20%;
+    --input: 220 30% 20%;
+    --ring: 260 40% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;  
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.story-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.character-portrait {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.character-portrait:hover {
+  transform: scale(1.03);
+}
+
+.scene-transition {
+  @apply animate-fade-in;
+}
+
+.choice-button {
+  @apply px-6 py-3 rounded-md transition-all duration-300 bg-mystery-medium hover:bg-mystery-accent text-white font-medium shadow-md transform hover:-translate-y-1;
+}
+
+.evidence-item {
+  @apply p-4 border border-border rounded-md bg-card hover:bg-secondary transition-colors duration-300;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.detective-note {
+  @apply p-4 bg-secondary/50 border-l-4 border-primary italic my-4 rounded-r-md;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--secondary));
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary)); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent)); 
+}
