@@ -6,12 +6,12 @@ type CharacterPortraitProps = {
 };
 
 const characterImages = {
-  chen: '/characters/chen.png',
-  liu: '/characters/liu.png',
-  lin: '/characters/lin.png',
-  wu: '/characters/wu.png',
-  zhao: '/characters/zhao.png',
-  meiMei: '/characters/meiMei.png',
+  chen: '/silent-witness-interactive-web/characters/chen.png',
+  liu: '/silent-witness-interactive-web/characters/liu.png',
+  lin: '/silent-witness-interactive-web/characters/lin.png',
+  wu: '/silent-witness-interactive-web/characters/wu.png',
+  zhao: '/silent-witness-interactive-web/characters/zhao.png',
+  meiMei: '/silent-witness-interactive-web/characters/meiMei.png',
 };
 
 const sizes = {
